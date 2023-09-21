@@ -8,6 +8,6 @@
 */
 package slice
 
-func Add[Src any](src Src[], element Src, index int) ([]Src, error) {
+func Add[Src any](src []Src, element Src, index int) ([]Src, error) {
 	return nil, nil
 }
