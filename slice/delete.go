@@ -10,7 +10,7 @@ package slice
 
 import "github.com/kongchujun/jkit/internal/slice"
 
-// delete element from slice by index
+// Delete delete element from slice by index
 func Delete[T any](src []T, index int) ([]T, error) {
 	res, _, err := slice.Delete(src, index)
 	if err != nil {
@@ -19,7 +19,7 @@ func Delete[T any](src []T, index int) ([]T, error) {
 	return res, nil
 }
 
-// delete by condition with quick and slow pointer
+// FilterDelete delete by condition with quick and slow pointer
 func FilterDelete[T any](src []T, m func(idx int, src []T) bool) []T {
 	emptyPos := 0          // slow pointer
 	for idx := range src { // quick pointer
