@@ -9,3 +9,4 @@
 package slice
 
 type matchFunc[T any] func(src T) bool
+type equalFunc[T any] func(src, dst T) bool
